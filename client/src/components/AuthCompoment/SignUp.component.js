@@ -22,11 +22,11 @@ const SignUpcomponent = () => {
   }, [authStatus, navigate]);
 
   const [formData, setFormData] = useState({
-    name: "Nitesh",
-    phone: "9354181823",
-    company_name: "NT Demo Company",
-    company_email: "niteshtiwari5222@gmail.com",
-    employee_size: "56",
+    name: "",
+    phone: "",
+    company_name: "",
+    company_email: "",
+    employee_size: "",
   });
 
   const [isLoading, setIsLoading] = useState(false);
