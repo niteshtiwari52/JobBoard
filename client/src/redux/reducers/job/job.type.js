@@ -1,0 +1,3 @@
+export const CREATE_JOB = "CREATE_JOB"
+export const CREATE_JOB_ERROR = "CREATE_JOB_ERROR"
+export const CLEAR_JOB_ERROR = "CLEAR_JOB_ERROR"
