@@ -1,5 +1,5 @@
 import axios from "axios";
-import { SELF, CLEAR_USER, GET_USER_DETAILS } from "./user.type";
+import { SELF} from "./user.type";
 const apiUrl = process.env.REACT_APP_API_URL;
 
 export const getMyDetailsAction = () => async (dispatch) => {
