@@ -98,30 +98,3 @@ This is a full-stack job board application built using the MERN stack (MongoDB, 
   cd server
   npm run dev
 ```## Tech Stack
-
-### Client
-- **React**: JavaScript library for building user interfaces
-- **Redux**: State management for React
-- **Axios**: HTTP client for API requests
-- **React Router**: For handling client-side routing
-
-### Server
-- **Node.js**: JavaScript runtime for the server-side
-- **Express.js**: Web framework for Node.js
-- **MongoDB**: NoSQL database for storing data
-- **JSON Web Tokens (JWT)**: For user authentication and session management
-- **Nodemailer**: For sending emails (e.g., verification, notifications)
-- **Joi**: Validation library for request data
-
-### Authentication
-- **JWT (JSON Web Token)**: 
-  - Implemented for secure user authentication. After login or registration, a JWT is issued to the user, which is then used to authenticate API requests and manage user sessions. This ensures stateless and secure communication between the client and server. In my case I am generating JWT token after verifying EMail OTP and rediercting user to dashboard to use the functionality of the Application.
-
-### Verification Technologies
-- **Email Verification**: 
-  - Using **Nodemailer** for sending OTP to verify email addresses.
-- **Mobile OTP Verification**:
-  - Integrated with **MSG91** for mobile OTP verification.
-  - Currently, mobile OTP functionality is limited due to the absence of a valid Template ID required by MSG91 for OTP services. The verification logic has been commented out, and only a success message is being sent for demonstration purposes.
-
-**Note**: This project utilizes MSG91 for mobile OTP verification. I have implemented a helper function for mobile OTP verification via MSG91, but I am currently unable to use the full OTP verification functionality as I do not have a valid Template ID from MSG91. Since I do not possess a registered company or the necessary license to obtain the Template ID, the actual mobile OTP verification feature could not be fully integrated. As a workaround, the OTP verification logic has been commented out, and the system currently sends a default "OTP verified" success message for mobile OTPs. This is due to the lack of complete MSG91 credentials. I apologize for the inconvenience.
